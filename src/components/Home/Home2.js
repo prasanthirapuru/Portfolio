@@ -19,36 +19,36 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I fell in love with programming and I have learned quite a lot
+              along the way, I think… 🤷‍♂️
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> Python, Javascript and Java. </b>
+                <b className="purple"> Python, JavaScript, and Java. </b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              My fields of interest include building new &nbsp;
               <i>
                 <b className="purple">Web Technologies </b> and
-                also in areas related to{" "}
+                working on areas related to{" "}
                 <b className="purple">
-                  Data science.
+                  Data Science.
                 </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with 
+              Whenever possible, I apply my passion for developing products
+              with
               <i>
                 <b className="purple">
                   {" "}
-                  Machine Learing using Python Libraries
+                  Machine Learning using Python libraries
                 </b>
               </i>
-              &nbsp; like
+              &nbsp; such as
               <i>
-                <b className="purple"> Numpy, Pandas, Scikit-learn, Matplotlib.js</b>
+                <b className="purple"> NumPy, Pandas, Scikit-learn, and Matplotlib</b>
               </i>
             </p>
           </Col>
@@ -70,23 +70,22 @@ function Home2() {
                   href="https://github.com/prasanthirapuru"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiFillGithub />
                 </a>
               </li>
-             
+
               <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/prasanthi-rapuru-ba7ab8370"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <FaLinkedinIn />
                 </a>
               </li>
-              
             </ul>
           </Col>
         </Row>
@@ -94,4 +93,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;
