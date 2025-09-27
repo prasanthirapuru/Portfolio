@@ -13,7 +13,7 @@ function AboutCard() {
             <br />
             Final Year Computer Science Student | Aspiring Software Developer.
             <br />
-            B.Tech in Computer Science, Sri Venkateshwar College of Engineering.
+            B.Tech in Computer Science, Sri Venkateswara College of Engineering.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
