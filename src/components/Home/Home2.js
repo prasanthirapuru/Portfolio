@@ -28,23 +28,18 @@ function Home2() {
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              My fields of interest include building new &nbsp;
               <i>
                 <b className="purple">Web Technologies </b> and
                 also in areas related to{" "}
-                <b className="purple">
-                  Data science.
-                </b>
+                <b className="purple">Data Science.</b>
               </i>
               <br />
               <br />
               Whenever possible, I also apply my passion for developing products
               with 
               <i>
-                <b className="purple">
-                  {" "}
-                  Machine Learing using Python Libraries
-                </b>
+                <b className="purple">Machine Learning using Python libraries</b>
               </i>
               &nbsp; like
               <i>
@@ -86,7 +81,6 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
-              
             </ul>
           </Col>
         </Row>
@@ -94,3 +88,5 @@ function Home2() {
     </Container>
   );
 }
+
+export default Home2; 
