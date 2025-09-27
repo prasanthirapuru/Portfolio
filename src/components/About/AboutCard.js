@@ -11,7 +11,7 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Prasanthi Rapuru  </span>
             from <span className="purple"> Nellore, Andhra Pradesh, India.</span>
             <br />
-            Final Year Computer Science Student | Aspiring Software DevelopeR.
+            Final Year Computer Science Student | Aspiring Software Developer.
             <br />
             B.Tech in Computer Science, Sri Venkateshwar College of Engineering.
             <br />
