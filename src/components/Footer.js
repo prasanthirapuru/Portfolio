@@ -22,7 +22,7 @@ function Footer() {
             {/* GitHub Icon */}
             <li className="social-icons">
               <a
-                href="https://github.com/soumyajit4419" 
+                href="https://github.com/prasanthirapuru" 
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -31,9 +31,7 @@ function Footer() {
               </a>
             </li>
             
-            {/* Twitter Icon was here - REMOVED */}
-            
-            {/* LinkedIn Icon */}
+           
             <li className="social-icons">
               <a
                 href="https://www.linkedin.com/in/prasanthi-rapuru-ba7ab8370"
@@ -45,7 +43,7 @@ function Footer() {
               </a>
             </li>
             
-            {/* Instagram Icon was here - REMOVED */}
+          
 
           </ul>
         </Col>
