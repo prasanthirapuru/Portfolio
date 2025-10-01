@@ -21,7 +21,8 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+       
+            <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
@@ -34,12 +35,12 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={waterqualityprediction}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Water Quality Prediction"
+              description="This project focuses on predicting the quality of water based on various environmental and chemical parameters. Using machine learning algorithms, it analyzes datasets containing water quality indicators to classify water as safe or unsafe for consumption."
+              ghLink="https://github.com/prasanthirapuru/waterqualityprediction"
+              demoLink="https://portfolio-roan-six-23.vercel.app/"
             />
           </Col>
 
