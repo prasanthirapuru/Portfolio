@@ -4,11 +4,10 @@ function Contact() {
   return (
     <div className="contact-page">
       <div className="contact-card">
-        <h2>Contact Me</h2>
         <form className="contact-form">
-          <input type="text" placeholder="Name" required />
-          <input type="email" placeholder="Email" required />
-          <textarea placeholder="Message" rows="5" required></textarea>
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Your Email" />
+          <textarea placeholder="Your Message"></textarea>
           <button type="submit">Send</button>
         </form>
       </div>
