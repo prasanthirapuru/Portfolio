@@ -799,6 +799,15 @@ button:focus {
   background: rgba(255, 255, 255, 0.3);
 }
 
+
+.contact-heading {
+  text-align: center;
+  font-size: 2rem;
+  color: white; 
+  margin-bottom: 20px;
+}
+
+
 .contact-form button {
   margin-top: 10px;
   padding: 12px 25px;
