@@ -1,4 +1,4 @@
-html {
+ html {
   --section-background-color: linear-gradient(
     to bottom left,
     rgba(17, 16, 16, 0.582),
@@ -752,7 +752,7 @@ button:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: var(--section-background-color);
+  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);                                                    
   padding: 20px;
 }
 
