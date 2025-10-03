@@ -865,16 +865,20 @@ button:focus {
   font-size: 1rem;
 }
 
-.dialog-box button {
-  padding: 10px 25px;
-  border-radius: 10px;
-  border: none;
-  background-color: #770588;
+.dialog-box {
+  background: rgba(119, 53, 136, 0.25); /* lighter, more transparent purple */
+  backdrop-filter: blur(15px) saturate(180%); /* glass effect */
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.18); /* subtle border like contact card */
+  padding: 30px 35px;
+  border-radius: 20px;
+  text-align: center;
   color: white;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.37);
+  max-width: 400px;
+  animation: fadeIn 0.3s ease-in-out;
 }
+
 
 .dialog-box button:hover {
   background-color: #5a036f;
