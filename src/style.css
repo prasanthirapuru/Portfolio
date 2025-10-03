@@ -827,8 +827,7 @@ button:focus {
 
 
 
-
-/* Custom Dialog for Portfolio Theme */
+/* Custom Dialog for Portfolio Theme (Black Glass) */
 .dialog-overlay {
   position: fixed;
   top: 0;
@@ -843,7 +842,7 @@ button:focus {
 }
 
 .dialog-box {
-  background: rgba(255, 255, 255, 0.1); /* glassy purple effect */
+  background: rgba(255, 255, 255, 0.1); /* black glass effect */
   backdrop-filter: blur(15px) saturate(180%);
   -webkit-backdrop-filter: blur(15px) saturate(180%);
   border-radius: 20px;
@@ -873,7 +872,7 @@ button:focus {
   padding: 12px 25px;
   border-radius: 10px;
   border: none;
-  background-color: rgba(119, 53, 136, 0.459); /* match contact-card button */
+  background-color: rgba(119, 53, 136, 0.459); /* purple button still matches theme */
   color: white;
   font-size: 1rem;
   cursor: pointer;
