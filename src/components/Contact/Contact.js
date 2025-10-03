@@ -7,7 +7,7 @@ function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault(); // prevent page reload
-
+ 
     emailjs
       .sendForm(
         "service_p8587y1", // Your Gmail service ID
