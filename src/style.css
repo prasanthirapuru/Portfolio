@@ -868,19 +868,39 @@ button:focus {
   font-size: 1rem;
 }
 
-.dialog-box button {
-  padding: 12px 25px;
+
+.dialog-box .close-btn {
+  padding: 8px 20px;
   border-radius: 10px;
   border: none;
-  background-color: rgba(119, 53, 136, 0.459); /* purple button still matches theme */
-  color: white;
+  background-color: rgba(255, 255, 255, 0.1); /* black glass like dialog */
+  color: #c770f0; /* accent color */
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+}
+
+.dialog-box .close-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* slightly brighter on hover */
+  transform: translateY(-2px);
+}
+
+
+.dialog-box button {
+  padding: 8px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1); /* black glass like dialog */
+  color: #c770f0; /* accent color */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
 }
 
 .dialog-box button:hover {
-  background-color: #5a036f;
+ background-color: rgba(255, 255, 255, 0.2); /* slightly brighter on hover */
   transform: translateY(-2px);
 }
 
