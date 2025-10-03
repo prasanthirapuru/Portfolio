@@ -860,7 +860,7 @@ button:focus {
 .dialog-box h3 {
   font-size: 1.8rem;
   margin-bottom: 15px;
-  color: #c770f0; /* portfolio accent color */
+  color: white; /* portfolio accent color */
 }
 
 .dialog-box p {
