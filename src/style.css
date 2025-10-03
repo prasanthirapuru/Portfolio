@@ -826,7 +826,4 @@ button:focus {
 }
 
 
-.contact-form button:hover {
-  background-color: #9b4dff;
-  transform: scale(1.05);
-}
+
