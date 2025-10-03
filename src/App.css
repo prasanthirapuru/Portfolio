@@ -29,118 +29,90 @@
 }
 
 /* Contact page styles (glassmorphism) */
-.contact-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 80vh;
-  padding: 2rem;
-  background: #f0f2f5; /* optional light background */
-}
-
-.contact-card {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 20px;
-  padding: 3rem 2rem;
-  max-width: 450px;
-  width: 100%;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+/* === Global Styles === */
+.App {
   text-align: center;
 }
 
-.contact-card h2 {
-  margin-bottom: 1.5rem;
-  color: #fff;
+/* Background for all pages */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
 }
 
+/* === Contact Page Styles === */
+.contact-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Example background similar to other pages */
+  background: url('../Assets/stars-bg.jpg') center center / cover no-repeat;
+  padding: 20px;
+}
+
+/* Glassmorphism card */
+.contact-card {
+  background: rgba(255, 255, 255, 0.1); /* transparent */
+  backdrop-filter: blur(15px); /* glass blur effect */
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Form inputs inside the glass card */
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 0.8rem 1rem;
-  margin-bottom: 1rem;
-  border: none;
+  padding: 12px 15px;
+  margin: 10px 0;
   border-radius: 10px;
+  border: none;
   background: rgba(255, 255, 255, 0.2);
-  color: #fff;
+  color: white;
   font-size: 1rem;
+  outline: none;
+  backdrop-filter: blur(5px);
+  transition: background 0.3s ease;
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-  color: #e0e0e0;
+  color: rgba(255, 255, 255, 0.7);
 }
 
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Submit button */
 .contact-form button {
-  width: 100%;
-  padding: 0.8rem 1rem;
-  background-color: #6f42c1; /* purple theme */
-  border: none;
+  margin-top: 10px;
+  padding: 12px 25px;
   border-radius: 10px;
-  color: #fff;
+  border: none;
+  background-color: purple;
+  color: white;
   font-size: 1rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .contact-form button:hover {
-  background-color: #5a3490; /* darker purple on hover */
-}
-
-/* Responsive adjustments */
-@media (max-width: 500px) {
-  .contact-card {
-    padding: 2rem 1rem;
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-
-/* Contact page styles moved to App.css */
-.contact-container {
-  padding: 50px;
-  text-align: center;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  margin: 10px 0;
-  padding: 10px;
-}
-
-.contact-form button {
-  padding: 10px 20px;
-  background-color: purple;
-  color: white;
-  border: none;  
-  cursor: pointer;
+  background-color: #9b4dff;
+  transform: scale(1.05);
 }
 
 
