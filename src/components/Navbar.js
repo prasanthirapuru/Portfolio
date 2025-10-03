@@ -94,13 +94,14 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://portfolio-roan-six-23.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
+                as={Link}
+                to="/contact"
+                onClick={() => updateExpanded(false)}
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> Contact
               </Nav.Link>
             </Nav.Item>
+
 
             <Nav.Item className="fork-btn">
               <Button
