@@ -804,12 +804,18 @@ button:focus {
   padding: 12px 25px;
   border-radius: 10px;
   border: none;
-  background-color: rgba(119, 53, 136, 0.459);
+  background-color: rgba(119, 53, 136, 0.459); /* semi-transparent purple */
   color: white;
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease;
 }
+
+.contact-form button:hover {
+  background-color: #770588; /* solid purple */
+  transform: translateY(-2px); /* optional lift effect */
+}
+
 
 .contact-form button:hover {
   background-color: #9b4dff;
