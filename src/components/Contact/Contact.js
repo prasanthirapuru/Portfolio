@@ -1,11 +1,10 @@
 import React from "react";
-import "./sendbuttons.css"; // make sure the path is correct
 
 function Contact() {
   return (
     <div className="contact-page">
       <div className="contact-card">
-       <h2 className="contact-heading">Contact Me</h2>
+        <h2 className="contact-heading">Contact Me</h2> {/* Added heading */}
         <form className="contact-form">
           <input type="text" placeholder="Your Name" />
           <input type="email" placeholder="Your Email" />
