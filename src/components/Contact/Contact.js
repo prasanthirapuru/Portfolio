@@ -1,30 +1,34 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-
 
 function Contact() {
   const form = useRef();
+  const [showDialog, setShowDialog] = useState(false); // track dialog visibility
 
   const sendEmail = (e) => {
-    e.preventDefault(); // prevent page reload
- 
+    e.preventDefault();
+
     emailjs
       .sendForm(
-        "service_p8587y1", // Your Gmail service ID
-        "template_yzmlxcm",          // Your template ID
+        "service_p8587y1",
+        "template_yzmlxcm",
         form.current,
-        "zuvSQ993Uxqb4xSCO" // Your public key
+        "zuvSQ993Uxqb4xSCO"
       )
       .then(
-        (result) => {
-          alert("Message sent successfully!");
-          e.target.reset(); // clear form
+        () => {
+          setShowDialog(true); // show custom dialog
+          e.target.reset();    // clear form
         },
         (error) => {
-          alert("Oops! Something went wrong.");
           console.error(error.text);
+          alert("Oops! Something went wrong."); // keep default alert for error
         }
       );
+  };
+
+  const closeDialog = () => {
+    setShowDialog(false);
   };
 
   return (
@@ -38,6 +42,17 @@ function Contact() {
           <button type="submit">Send</button>
         </form>
       </div>
+
+      {/* Custom dialog */}
+      {showDialog && (
+        <div className="dialog-overlay">
+          <div className="dialog-box">
+            <h3>Message Sent!</h3>
+            <p>Thank you for contacting me. I will get back to you soon.</p>
+            <button onClick={closeDialog}>Close</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
