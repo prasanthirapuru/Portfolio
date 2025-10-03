@@ -1,4 +1,5 @@
 
+
 .App {
   text-align: center;
 }
@@ -28,47 +29,18 @@
 .App-link {
   color: #61dafb;
 }
-/* Contact Page Background with Stars */
+/* === Contact Page Glassmorphism === */
 .contact-page {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(ellipse at bottom, #0d0d0d 0%, #1a1a1a 100%);
-  overflow: hidden;
-  position: relative;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); /* subtle dark gradient */
   padding: 20px;
 }
 
-.contact-page::before {
-  content: '';
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  background: transparent;
-  box-shadow: 
-    50px 100px #fff,
-    150px 200px #fff,
-    300px 50px #fff,
-    500px 300px #fff,
-    700px 150px #fff,
-    900px 400px #fff,
-    1200px 200px #fff,
-    1400px 50px #fff,
-    1600px 300px #fff;
-  animation: starsMove 50s linear infinite;
-  z-index: 0;
-}
-
-@keyframes starsMove {
-  from { transform: translateY(0); }
-  to { transform: translateY(-2000px); }
-}
-
-/* Glassmorphic card stays the same */
+/* Glassmorphic card */
 .contact-card {
-  position: relative;
-  z-index: 1;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);
   border-radius: 20px;
@@ -82,6 +54,53 @@
   transition: transform 0.3s ease;
 }
 
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Form inputs inside the glass card */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  backdrop-filter: blur(5px);
+  transition: background 0.3s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Submit button */
+.contact-form button {
+  margin-top: 10px;
+  padding: 12px 25px;
+  border-radius: 10px;
+  border: none;
+  background-color: purple;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: #9b4dff;
+  transform: scale(1.05);
+}
 
 
 @keyframes App-logo-spin {
