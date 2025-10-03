@@ -11,7 +11,7 @@ function Contact() {
     emailjs
       .sendForm(
         "service_p8587y1", // Your Gmail service ID
-        "0t2k762",          // Your template ID
+        "template_yzmlxcm",          // Your template ID
         form.current,
         "zuvSQ993Uxqb4xSCO" // Your public key
       )
